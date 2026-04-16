@@ -18,7 +18,7 @@ interface Props {
 const SCAN_COLORS = {
   purple: 'bg-purple-700',
   green: 'bg-green-700',
-  navy: 'bg-[#1a2e5a]',
+  navy: 'bg-[#f96302]',
 };
 
 export default function PackageDetailPanel({

@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Montserrat', sans-serif;
+  --font-sans: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-  /* Brand blue scale */
-  --color-blue-50:  #e8f5fd;
-  --color-blue-100: #d1eafb;
-  --color-blue-200: #a3d5f7;
-  --color-blue-300: #75c0f3;
-  --color-blue-400: #47abef;
-  --color-blue-500: #27aaf2;
-  --color-blue-600: #1a8bcb;
-  --color-blue-700: #003667;
-  --color-blue-800: #002a55;
-  --color-blue-900: #001f3d;
-  --color-blue-950: #00152a;
+  /* Home Depot brand scale: orange (primary CTA) shifting to black (headings/dark sections). */
+  --color-blue-50:  #fff4ec;
+  --color-blue-100: #ffe4d1;
+  --color-blue-200: #ffc4a3;
+  --color-blue-300: #ffa270;
+  --color-blue-400: #fe863f;
+  --color-blue-500: #fb7318;
+  --color-blue-600: #f96302;
+  --color-blue-700: #1a1a1a;
+  --color-blue-800: #0d0d0d;
+  --color-blue-900: #050505;
+  --color-blue-950: #000000;
 }
 
 *, *::before, *::after {
@@ -27,7 +27,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   background-color: #f9fafb;
   color: #111827;
@@ -48,6 +48,6 @@ button {
 }
 
 button:focus-visible {
-  outline: 2px solid #003667;
+  outline: 2px solid #f96302;
   outline-offset: 2px;
 }
