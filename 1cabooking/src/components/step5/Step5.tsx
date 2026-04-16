@@ -31,7 +31,7 @@ function formatBookingDate(dateStr: string, lang: string): string {
 
 function formatSlotTime(iso: string): string {
   return new Date(iso).toLocaleTimeString('en-CA', {
-    timeZone: 'America/Montreal',
+    timeZone: 'America/Toronto',
     hour: 'numeric',
     minute: '2-digit',
     hour12: true,
