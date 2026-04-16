@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "build": "cd 1cabooking && npm install && npm run build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.2.1"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
