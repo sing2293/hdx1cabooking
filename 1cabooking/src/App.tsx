@@ -525,7 +525,7 @@ function BookingApp() {
         <LocationGate onConfirm={(r, city, address, parts) => {
           setRegion(r);
           const isGatineau = GATINEAU_QC.some(c => normalizeCity(city).includes(c));
-          const province = (r === 'montreal' || isGatineau) ? 'Québec' : 'Ontario';
+          const province = isGatineau ? 'Québec' : 'Ontario';
           setStep3Data((prev) => ({
             ...prev,
             streetAddress: address,

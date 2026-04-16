@@ -8,12 +8,11 @@ function normalize(s: string): string {
   return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
 }
 
-/* Returns the region key the backend expects, or null if not served */
-function cityToRegion(city: string): 'ottawa' | 'montreal' | 'bkc' | null {
+/* Returns the region key the backend expects, or null if not served.
+   Home Depot brand serves Ottawa + Gatineau only — Montreal and BKC are not served. */
+function cityToRegion(city: string): 'ottawa' | null {
   const c = normalize(city);
-  if (brand.cities.bkc.some(n => c.includes(n)))                                                         return 'bkc';
-  if (brand.cities.ottawa.some(n => c.includes(n)) || brand.cities.gatineau.some(n => c.includes(n)))   return 'ottawa';
-  if (brand.cities.montreal.some(n => c.includes(n)))                                                    return 'montreal';
+  if (brand.cities.ottawa.some(n => c.includes(n)) || brand.cities.gatineau.some(n => c.includes(n))) return 'ottawa';
   return null;
 }
 
@@ -21,7 +20,7 @@ function cityToRegion(city: string): 'ottawa' | 'montreal' | 'bkc' | null {
 type AnyWindow = Window & typeof globalThis & Record<string, any>;
 
 interface Props {
-  onConfirm: (region: 'ottawa' | 'montreal' | 'bkc', city: string, address: string, parts?: { stateCode: string; zip: string; address1: string }) => void;
+  onConfirm: (region: 'ottawa', city: string, address: string, parts?: { stateCode: string; zip: string; address1: string }) => void;
 }
 
 export default function LocationGate({ onConfirm }: Props) {
@@ -33,7 +32,7 @@ export default function LocationGate({ onConfirm }: Props) {
   const [city, setCity]           = useState('');
   const [address, setAddress]     = useState('');
   const [addressParts, setAddressParts] = useState<{ stateCode: string; zip: string; address1: string }>({ stateCode: '', zip: '', address1: '' });
-  const [region, setRegion]       = useState<'ottawa' | 'montreal' | 'bkc' | '' | null>(null); // null = not checked, '' = not served
+  const [region, setRegion]       = useState<'ottawa' | '' | null>(null); // null = not checked, '' = not served
   const [inputVal, setInputVal]   = useState('');
 
   /* ── Wait for Google Maps (loaded via index.html script tag) ── */
@@ -193,8 +192,8 @@ export default function LocationGate({ onConfirm }: Props) {
           {notServed && (
             <p className="mt-2 text-xs text-red-500 font-medium">
               {lang === 'en'
-                ? `Sorry, we don't service ${city || 'that area'} yet. We serve Ottawa, Gatineau & Montreal.`
-                : `Désolé, nous ne desservons pas encore ${city || 'cette région'}. Nous desservons Ottawa, Gatineau et Montréal.`}
+                ? `Sorry, we don't service ${city || 'that area'} yet. We serve Ottawa & Gatineau.`
+                : `Désolé, nous ne desservons pas encore ${city || 'cette région'}. Nous desservons Ottawa et Gatineau.`}
             </p>
           )}
 
