@@ -208,7 +208,7 @@ export default function LocationGate({ onConfirm }: Props) {
       </div>
 
       {/* ── Sticky bottom bar ── */}
-      <div className="fixed bottom-0 left-0 right-0 bg-slate-900 shadow-2xl">
+      <div className="fixed bottom-0 left-0 right-0 bg-black shadow-2xl">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between gap-3">
           <a
             href={`tel:${brand.phoneDigits}`}

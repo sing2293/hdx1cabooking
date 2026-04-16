@@ -291,7 +291,7 @@ export default function Step5({ step1, step3, step4, selectedExtras, carpetTiers
           </div>
 
           {/* Total bar */}
-          <div className="mt-4 bg-gray-900 text-white rounded-lg px-4 py-3 flex justify-between items-center">
+          <div className="mt-4 bg-black text-white rounded-lg px-4 py-3 flex justify-between items-center">
             <span className="text-sm font-bold uppercase tracking-wider">Total</span>
             <span className="text-xl font-bold">{fmt(total)}</span>
           </div>
