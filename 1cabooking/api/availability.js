@@ -1,4 +1,4 @@
-const BACKEND = 'https://1cleanairbackend.vercel.app';
+const BACKEND = 'https://hdx1ca-backend.vercel.app';
 const SECRET  = '1cleanAir_2026_dispatch_secure_X9d83jsk29DKL';
 
 export default async function handler(req, res) {

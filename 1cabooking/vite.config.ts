@@ -10,7 +10,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://1cleanairbackend.vercel.app',
+        target: 'https://hdx1ca-backend.vercel.app',
         changeOrigin: true,
         secure: false,
         configure: (proxy) => {
