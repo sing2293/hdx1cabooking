@@ -1,8 +1,9 @@
-const BACKEND = 'https://hdx1ca-backend.vercel.app';
-const SECRET  = '1cleanAir_2026_dispatch_secure_X9d83jsk29DKL';
+const BACKEND = process.env.BACKEND_URL || 'https://hdx1ca-backend.vercel.app';
+const SECRET  = process.env.API_SECRET;
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end();
+  if (!SECRET) return res.status(500).json({ error: 'API_SECRET env var not set' });
 
   const upstream = await fetch(`${BACKEND}/api/book`, {
     method: 'POST',
