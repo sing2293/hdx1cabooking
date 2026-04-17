@@ -60,7 +60,7 @@ export const EXTRAS: Extra[] = [
     bundlePrice: 79,
     bundlePricePrefix: { en: 'Start', fr: 'À partir' },
     hasQuantity: false,
-    image: '/images/dryer-vent.png',
+    image: '/images/dryer-vent.jpg',
     dryerLocations: [
       { id: 'ground',       label: { en: 'Ground level (No ladder)',                    fr: 'Niveau du sol (sans échelle)'            }, price: 79  },
       { id: 'under-deck',   label: { en: "Under Deck (3' min clearance)",               fr: "Sous la terrasse (3' min)"               }, price: 129 },

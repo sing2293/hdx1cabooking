@@ -199,7 +199,7 @@ export const SERVICES: ServiceCategory[] = [
           { id: 'rooftop',      label: { en: 'Rooftop / Difficult Access (Access Provided)',fr: 'Toit / Accès difficile (accès fourni)'  }, price: 349 },
           { id: 'inside-only',  label: { en: 'Inside Only – No Exterior Access',            fr: 'Intérieur seulement – Sans accès ext.'  }, price: 199 },
         ],
-        image: '/images/dryer-vent.png',
+        image: '/images/dryer-vent.jpg',
       },
     ],
   },
