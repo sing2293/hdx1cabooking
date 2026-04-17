@@ -95,18 +95,6 @@ export const EXTRAS: Extra[] = [
     image: '/images/air-exchanger.jpg',
   },
   {
-    id: 'extra-outdoor-heat-pump',
-    name: { en: 'Outdoor Heat Pump & Condenser Cleaning', fr: 'Nettoyage pompe à chaleur extérieure et condenseur' },
-    description: {
-      en: 'We deep-clean the exterior heat pump fins to remove dirt, pollen, and debris that block heat transfer. Since this unit is responsible for releasing or absorbing heat for your entire home, keeping these coils clear is essential for maximizing energy efficiency and preventing system strain.',
-      fr: 'Nous nettoyons en profondeur les ailettes de la pompe à chaleur extérieure pour éliminer la saleté, le pollen et les débris qui bloquent le transfert de chaleur.',
-    },
-    originalPrice: 249,
-    bundlePrice: 149,
-    hasQuantity: true,
-    image: '/images/outdoor-heat-pump.jpg',
-  },
-  {
     id: 'extra-wall-unit',
     name: { en: 'Wall Unit (Mini-Split)', fr: 'Unité murale (Mini-Split)' },
     description: {

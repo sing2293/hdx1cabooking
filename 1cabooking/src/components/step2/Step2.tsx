@@ -20,7 +20,6 @@ const EXCLUDED_BY_SERVICE: Record<string, string> = {
   'air-exchanger':    'extra-air-exchanger',
   'furnace-blower':   'extra-furnace-blower',
   'indoor-coil':      'extra-indoor-coil',
-  'outdoor-heat-pump':'extra-outdoor-heat-pump',
   'uvc-light':        'extra-uvc',
 };
 

@@ -361,28 +361,6 @@ export const SERVICES: ServiceCategory[] = [
         unitLabel: { en: 'units', fr: 'unités' },
         image: '/images/indoor-coil.jpg',
       },
-      {
-        id: 'outdoor-heat-pump',
-        name: { en: 'Outdoor Unit Cleaning (Heat Pump / Condenser)', fr: 'Nettoyage unité extérieure (pompe à chaleur / condenseur)' },
-        price: 249,
-        description: {
-          en: 'Boost performance and extend system lifespan.',
-          fr: 'Améliorez la performance et prolongez la durée de vie du système.',
-        },
-        bulletPoints: [
-          { en: 'Removes dirt, pollen, and debris', fr: 'Élimine la saleté, le pollen et les débris' },
-          { en: 'Improves heat transfer efficiency', fr: 'Améliore l\'efficacité du transfert de chaleur' },
-          { en: 'Reduces strain on your system', fr: 'Réduit la pression sur votre système' },
-        ],
-        includes: [
-          { en: 'Coil Fin Cleaning', fr: 'Nettoyage des ailettes de la bobine' },
-          { en: 'Airflow Path Restoration', fr: 'Restauration du chemin de flux d\'air' },
-          { en: 'Safe Wet & Dry Process', fr: 'Processus humide et sec sécuritaire' },
-          { en: 'Source Removal', fr: 'Élimination à la source' },
-        ],
-        unitLabel: { en: 'units', fr: 'unités' },
-        image: '/images/outdoor-heat-pump.jpg',
-      },
     ],
   },
 ];
