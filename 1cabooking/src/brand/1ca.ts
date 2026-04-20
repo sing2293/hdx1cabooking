@@ -7,8 +7,8 @@ export const brand1ca: BrandConfig = {
   name: '1 Clean Air',
   logo: '/1CleanAir_LogoBilingue.png',
   pageTitle: '1 Clean Air Booking',
-  phoneDigits: '6136124828',
-  phoneDisplay: '(613)-612-4828',
+  phoneDigits: '6133664260',
+  phoneDisplay: '613-366-4260',
   privacyUrl: 'https://1cleanair.ca/privacy-policy/',
 
   cities: {

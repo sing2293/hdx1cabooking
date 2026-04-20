@@ -11,8 +11,8 @@ export const brandHdx1ca: BrandConfig = {
   name: 'Home Depot Home Services',
   logo: '/homedepot-logo.png',
   pageTitle: 'Home Depot Home Services Booking',
-  phoneDigits: '6136124828',
-  phoneDisplay: '(613)-612-4828',
+  phoneDigits: '6133664260',
+  phoneDisplay: '613-366-4260',
   privacyUrl: 'https://www.homedepot.ca/privacy-policy',
 
   cities: {
