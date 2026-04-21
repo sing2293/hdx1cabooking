@@ -429,6 +429,8 @@ function BookingApp() {
             // Notes
             notes: buildNotes(),
             // Meta
+            brand:     brand.id,
+            jobType,
             region:    effectiveRegion,
             booked_at: new Date().toISOString(),
             // FB / UTM tracking
